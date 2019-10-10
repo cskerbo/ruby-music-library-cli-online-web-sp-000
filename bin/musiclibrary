@@ -4,4 +4,6 @@ require_relative '../config/environment'
 
 MusicLibraryController.new.call
 
-puts MusicLibraryController.call
+if MusicLibraryController.call == 'list songs'
+  MusicLibraryController.list_songs
+end
