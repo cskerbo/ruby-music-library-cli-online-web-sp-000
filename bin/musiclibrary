@@ -2,7 +2,7 @@
 
 require_relative '../config/environment'
 
-user_input = MusicLibraryController.new.call
+MusicLibraryController.new.call
+command = gets.strip
 
-
-puts user_input
+puts command
