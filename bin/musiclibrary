@@ -3,3 +3,9 @@
 require_relative '../config/environment'
 
 MusicLibraryController.new.call
+
+user_input = gets.strip
+
+if user_input == 'list songs'
+  MusicLibraryController.list_songs
+end
